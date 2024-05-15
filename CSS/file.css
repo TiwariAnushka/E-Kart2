@@ -1,0 +1,14 @@
+div p b{
+    color: blueviolet;
+}
+h1, h2{
+    color: crimson;
+    text-decoration: double underline;
+}
+h3.abc{
+    color: blue;
+}
+
+h3, h4.abc{
+    text-decoration: line-through;
+}

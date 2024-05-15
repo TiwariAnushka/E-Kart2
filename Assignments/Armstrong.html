@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h3 id="ans"></h3>
+    <script>
+        var num=prompt("Enter 4 digit number:");  //1634
+        var sum=0;
+        var temp=num;//1634
+        while(temp>0){
+            var rem=temp%10;
+            sum+=rem*rem*rem*rem;
+            temp=parseInt(temp/10);
+        }
+        if(sum==num){
+            document.getElementById('ans').innerHTML='The number is armstrong number';
+        }
+        else{
+            document.getElementById('ans').innerHTML='The number is not an armstrong number';
+        }
+    </script>
+</body>
+</html>

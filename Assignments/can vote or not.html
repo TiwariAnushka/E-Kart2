@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h3 id="ans"></h3>
+    <script>
+        var age=prompt("Enter your age: ");
+        var nationality=prompt("Enter your nationality")
+        if(age>=18 && nationality=='Indian'){
+            document.getElementById('ans').innerHTML='You are eligible to vote';
+        }
+        else{
+            document.getElementById('ans').innerHTML='Not eligible';
+        }
+    </script>
+</body>
+</html>

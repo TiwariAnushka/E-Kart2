@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <style>
+        table{
+            border-color:blueviolet;
+            text-align: center;
+            width: 40%;
+            height: 250px;
+            margin-left: 800px;
+            margin-top: -1px;
+        }
+        input, textarea{
+            border-radius: 5px;
+        }
+        #personalD{
+            /* margin-left: 40%; */
+            /* display: flex;
+            flex-direction: column; */
+            background-color: powderblue;
+            width: 400px;
+            height: 300px;
+            border-radius: 5px;
+            /* margin-top: 00px; */
+            margin-left: 10%;
+        }
+        input, textarea{
+            margin: 10px;
+            height: 20px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <div id="personalD">
+            <h2 style="text-align: center; padding-top: 15px;">Purchaser's Personal Details</h2>
+            <input type="text" placeholder="Full Name" style="display: block; margin-left: 60px; padding: 10px; width: 250px;">
+            <textarea cols="20" rows="3" placeholder="Address" style="display: block; margin-left: 60px; padding: 10px; width: 250px;"></textarea>
+            <input type="number" placeholder="Contact Number" style="display: block; margin-left: 60px; padding: 10px; width: 250px;">
+            <input type="email" placeholder="username@example.com" style="display: block; margin-left: 60px; padding: 10px; width: 250px;">
+        </div>
+        
+        <h2 style="margin-left: 800px; margin-top: -22%; text-align: center;">Product Details</h2>
+        <table border="2">
+            <tr>
+                <th colspan="4">Land of Boxes</th>
+            </tr>
+            <tr>
+                <th>Product ID</th>
+                <th>Product</th>
+                <th>Cost</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>The EconoBox</td>
+                <td>Rs. 5</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>The Standard Box</td>
+                <td>Rs. 10</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>The premium Box</td>
+                <td>Rs. 15</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>The Deluxe Box</td>
+                <td>Rs. 20</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>The Super Duluxe Box</td>
+                <td>Rs. 30</td>
+                <td><input type="number"></td>
+            </tr>
+        </table>
+        <h2>Payment Method</h2>
+        <label> Card Type: </label>
+        <select>
+            <option>Credit Card</option>
+            <option>Debit Card</option>
+        </select>
+        <label>Card Number:</label> <input type="number">
+        <label>Expiry Date:</label> <input type="date">
+        <!-- <div id="addressD"> -->
+            <h2  style="margin-left: 75%; margin-top: -90px;">Address</h2>
+            <p style="padding-bottom: 8px; margin-left: 60%; margin-top: -3px; margin-bottom: 3px;">Billing Address:</p><textarea cols="20" rows="5" style="margin-left: 70%; margin-top: -60px; padding: 10px; width: 250px; padding-bottom: 8px;"></textarea><br>
+            <p style="padding-bottom: 8px; margin-left: 60%; margin-top: -3px; margin-bottom: 3px;">Delivery Address:</p><textarea cols="20" rows="5" style="margin-left: 70%; margin-top: -60px; padding: 10px; width: 250px;"></textarea><br>
+            <p style="padding-bottom: 8px; margin-left: 60%; margin-top: -3px; margin-bottom: 3px;"> If billing address and delivery address are diffrenet please mention delivery address.</p>
+        <!-- </div> -->
+        <input type="submit" value="Submit" style="margin-left: 45%; width: 90px; height: 30px;">
+        <input type="reset" value="Clear" style=" width: 90px; height: 30px;"><br>
+    </form>
+</body>
+</html>

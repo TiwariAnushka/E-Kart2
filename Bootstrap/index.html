@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="static/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="STATIC/CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Header starts -->
+        <div class="row bg-light">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="index.html">E-Kart 403</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="login.html">Logout</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="register.html">Register</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+        <!-- 1st row end or header section enf -->
+
+        <!-- Main starts -->
+        <div class="row mt-3 p-3 bg-light">
+
+            <!-- filter starts -->
+            <div class="col-md-3 bg-light p-3">
+                <h5>Filter by Category</h5><hr>
+                <a href="index.html">All</a><br>
+                <a href="#">Mobile</a><br>
+                <a href="#">Shoes</a><br>
+                <a href="#">Cloths</a><br><br>
+
+                <h5>Sort By Price</h5><hr>
+                <a href="#">High To Low</a><br>
+                <a href="#">Low to Hight</a><br><br>
+
+                <h5>Filter by price</h5><hr>
+                <form action="#" method="get">
+                    <div class="mb-2">
+                        <label for="Input1" class="form-label">Min</label>
+                        <input type="text" class="form-control" id="Input1">
+                    </div>
+                    <div class="mb-2">
+                        <label for="Input2" class="form-label">Max</label>
+                        <input type="text" class="form-control" id="Input2">
+                    </div>
+                    <div class="mb-2">
+                        <input type="submit" value="Filter" class="btn btn-danger">
+                    </div>
+                </form>
+            </div>
+            <!-- Filter section ends or side bar ends -->
+
+            <!-- product starts -->
+            <div class="col-md-9 bg-light p-3">
+
+                <!-- product list -->
+                <div class="row">
+
+                    <!-- Product 1 starts -->
+                    <div class="col-md-3">
+                        <div class="card" style="width: 100%; height: auto;">
+                            <img src="STATIC/Images/samsung.jpeg" class="card-img-top" alt="Mobile">
+                            <div class="card-body">
+                              <h5 class="card-title">Samsung</h5>
+                              <p class="card-text"><strong>Price : </strong>Rs. 34000</p>
+                              <a href="product_detail.html" class="btn btn-primary">See Deatils</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 1 ends -->
+
+                    <!-- Product 2 starts -->
+                    <div class="col-md-3">
+                        <div class="card" style="width: 100%; height: auto;">
+                            <img src="STATIC/Images/samsung.jpeg" class="card-img-top" alt="Mobile">
+                            <div class="card-body">
+                              <h5 class="card-title">Samsung</h5>
+                              <p class="card-text"><strong>Price : </strong>Rs. 34000</p>
+                              <a href="product_detail.html" class="btn btn-primary">See Deatils</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2 ends -->
+
+                    <!-- Product 3 starts -->
+                    <div class="col-md-3">
+                        <div class="card" style="width: 100%; height: auto;">
+                            <img src="STATIC/Images/samsung.jpeg" class="card-img-top" alt="Mobile">
+                            <div class="card-body">
+                              <h5 class="card-title">Samsung</h5>
+                              <p class="card-text"><strong>Price : </strong>Rs. 34000</p>
+                              <a href="product_detail.html" class="btn btn-primary">See Deatils</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 3 ends -->
+
+                    <!-- Product 4 starts -->
+                    <div class="col-md-3">
+                        <div class="card" style="width: 100%; height: auto;">
+                            <img src="STATIC/Images/samsung.jpeg" class="card-img-top" alt="Mobile">
+                            <div class="card-body">
+                              <h5 class="card-title">Samsung</h5>
+                              <p class="card-text"><strong>Price : </strong>Rs. 34000</p>
+                              <a href="product_detail.html" class="btn btn-primary">See Deatils</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 4 ends -->
+
+                </div>
+            </div>
+            <!-- product list ends or  -->
+
+        </div>
+        <!-- 2nd row end or main end  -->
+
+        <!-- footer starts -->
+        <div class="row mt-3 bg-light p-3">
+
+            <!-- 3rows start -->
+            <!-- address -->
+            <div class="col-md-4">
+                <h5>Address</h5><hr>
+                22-B, 1st floor,<br>
+                Rainbow Plaza, Shivar Chowk,<br>
+                Pimple Saudagar, Pune <br>
+                Maharashtra <br>
+                Contact: 9876543210
+            </div>
+
+            <!-- Quick Link -->
+            <div class="col-md-4">
+                <h5>Quick Link</h5><hr>
+                <a href="index.html">Home</a><br>
+                <a href="about.html">About</a><br>
+                <a href="contact.html">Contact Us</a><br>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="col-md-4">
+                <h5>Social Media</h5><hr>
+                <h5><a href="#" target="_blank"><i class="bi bi-linkedin"></i></a></h5>
+                <h5><a href="#" target="_blank"><i class="bi bi-github"></i></a></h5>
+                <h5><a href="#" target="_blank"><i class="bi bi-facebook"></i></a></h5>
+                <h5><a href="#" target="_blank"><i class="bi bi-twitter"></i></a></h5>
+            </div>
+        </div>
+        <!-- 3rd row or footer ends -->
+
+    </div>
+    <script src="STATIC/JS/bootstrap.min.js"></script>
+    <script src="STATIC/JS/popper.js"></script>
+</body>
+</html>

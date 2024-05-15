@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    Enter the number:
+    <input type="number" id="num">
+    <input type="button" value="Calculate" onclick="func()">
+    <h2 id="ans"></h2>
+
+    <script>
+        function func(){
+            var num=parseInt(document.getElementById('num').value);
+            function fact(n){
+                var facto=1;
+                for(var i=1; i<=n; i++){
+                    facto *= i;
+                }
+                return facto;
+            }
+            document.getElementById('ans').innerHTML=fact(num);
+        }
+    </script>
+</body>
+</html>

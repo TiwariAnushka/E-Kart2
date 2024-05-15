@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+
+<body>
+    <form method="post">
+        <input type="text" placeholder="City" id="city">
+        <input type="text" placeholder="State" id="state">
+        <input type="text" placeholder="Country" id="country">
+        <input type="button" value="Search" id="btn" onclick="fun()">
+        <h3 id="ans"></h3>
+    </form>
+</body>
+
+</html>
+
+<script>
+    function fun() {
+        var city = document.getElementById('city').value;
+        var state = document.getElementById('state').value;
+        var country = document.getElementById('country').value;
+
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': 'eb7c1e6456mshffcf9b845f761dap1ef769jsn0d2a220f2f78',
+                'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
+            }
+        };
+
+        const weather=(city, state, country)=>{
+            fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city='+city+'&state='+state+'&country='+country, options)
+            .then(response=>response.json())
+            .then(data=>{
+                console.log(data)
+                document.getElementById('ans').innerHTML='temp: '+data.temp;
+            })
+        }
+        weather(city, state, country)
+    }
+</script>

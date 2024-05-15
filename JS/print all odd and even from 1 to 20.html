@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h3>Even Numbers</h3>
+    <h3 id="even"></h3>
+    <h3>Odd Numbers</h3>
+    <h3 id="odd"></h3>
+    <script>
+        var i=1;
+        while(i<=20){
+            if(i%2==0){
+                document.getElementById('even').innerHTML=document.getElementById('even').innerHTML+i+'<br>';
+            }
+            else{
+                document.getElementById('odd').innerHTML=document.getElementById('odd').innerHTML+i+'<br>';
+            }
+            i++;
+        }
+    </script>
+</body>
+</html>

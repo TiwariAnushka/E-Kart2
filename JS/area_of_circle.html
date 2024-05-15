@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h3>HELLO</h3>
+    <h2 id="ans"></h2>
+    <h4>WORLD</h4>
+    <script>
+        const pi=3.14;
+        var r=5;
+        var area=pi*r*r;
+        // console.log(area);
+        // document.write(area);
+        document.getElementById('ans').innerHTML=area;//innerHTML sirf web page pe show krne ke liye hi likhte hai 
+        // document=is a class, getElementById= fetch the element who has the id named 'ans' innerHTML we use because 
+        // we are showing the result on the HTML page followed by what we have to print on our web page like we have to 
+        // print area on the page so we have written ''=area'
+        document.getElementById('ans').innerHTML="Area of Circle is: "+area;
+
+    </script>
+</body>
+</html>

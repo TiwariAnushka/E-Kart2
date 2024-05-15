@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h2 id="fact"></h2>
+    <script>
+        var num=5;
+        var fact=1;
+        for(var i=1; i<=num; i++){
+            var fact=fact*i;
+            document.getElementById('fact').innerHTML='The factorial of '+ num+' is '+fact;
+        }
+    </script>
+</body>
+</html>

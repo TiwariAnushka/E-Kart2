@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        form {
+            width: 400px;
+            height: 300px;
+            padding-top: 30px;
+        }
+
+        input {
+            display: block;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body style=" width:100%; background-image: url('bg.jpg');  background-repeat: no-repeat; background-size: cover;">
+    <div style="position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.6;">
+        <form method="post"
+            style="border: 1px solid rgb(59,60,65); background-color: rgb(10, 10, 10); border-radius: 10px; ">
+            <div style="margin-bottom: 5px;">
+                <h2 style="margin-left: 170px; color: aliceblue;">LOGIN</h2>
+                <input type="text" placeholder="Username" id="user"
+                    style="height: 40px; width: 200px; border-radius: 10px;" required>
+            </div>
+            <div>
+                <input type="password" id="pass" placeholder="Password" required
+                    style="height: 40px; width: 200px; border-radius: 10px;">
+            </div>
+            <div style=" margin-top: 10px; margin-right: 10px; ">
+                <input type="button" value="Login" onclick="landingPage()"
+                    style="margin-left: 160px; width: 100px; height: 30px; border-radius: 5px; color: aliceblue; background-color: black;">
+            </div>
+            <div style=" margin-top: 10px; margin-right: 10px;">
+                <input type="reset" value="Clear"
+                    style="margin-left: 180px; width: 60px; height: 30px; border-radius: 5px; color: aliceblue; background-color: black;">
+            </div>
+    </div>
+    </form>
+</body>
+
+</html>
+
+<script>
+    function landingPage() {
+        if (document.getElementById('user').value == '' && document.getElementById('pass').value == '') {
+            alert("Fill the required fields.")
+        } 
+        else if (document.getElementById('user').value == ''){
+            alert("Fill the required fields.")
+        }
+        else if (document.getElementById('pass').value == ''){
+            alert("Fill the required fields.")
+        }
+        else {
+            window.location.href = "landing_page.html";
+        }
+    }
+</script>
